@@ -9,7 +9,6 @@ export async function fetchAPI(type, options = false) {
         // Constuit l'URL de l'API
         const baseURL = process.env.BACK || 'http://localhost:5678/api' || 'https://bluelapi.vercel.app/api';
         
-
         // Construit l'URL dynamique
         const url = `${baseURL}/${type}`;
         let reponse;
